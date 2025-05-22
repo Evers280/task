@@ -3,6 +3,12 @@ from django.db import models
 # Create your models here.
 class Tasks(models.Model):
     
+    PRIORITE_CHOICES = [
+        (1, 'Faible'),
+        (2, 'Moyenne'),
+        (3, 'Haute'),    
+    ]
+    
     STATUS_CHOICES = [
         ('à faire', 'À faire'),
         ('en cours', 'En cours'),
